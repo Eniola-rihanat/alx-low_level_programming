@@ -16,7 +16,3 @@ int _pow_recursion(int x, int y)
 		return (x);
 	return (x *= _pow_recursion(x, y - 1));
 }
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
