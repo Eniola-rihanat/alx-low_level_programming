@@ -1,5 +1,3 @@
-es (23 sloc)  474 Bytes
-
 #include "variadic_functions.h"
 
 /**
@@ -10,19 +8,13 @@ es (23 sloc)  474 Bytes
 *
 *Return: nothing
 */
-
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-
 va_list li;
 unsigned int i;
-
 va_start(li, n);
-
 for (i = 0; i < n; i++)
 {
-
-
 printf("%d", va_arg(li, int));
 
 if (i != (n - 1) && separator != NULL)
