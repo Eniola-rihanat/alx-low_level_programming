@@ -1,22 +1,19 @@
 #include "lists.h"
 /**
- * print_list - prints list.
- * @h: param list
- * Return: struct
+ * list_len - returns the number of elements in a list.
+ * @h: singly linked list.
+ * Return: number of elements in the list.
  */
-size_t print_list(const list_t *h)
+size_t list_len(const list_t *h)
 {
-	size_t nodelen;
+	size_t count;
 
-	nodelen = 0;
+	count = 0;
 	while (h != NULL)
 	{
-		if (h->str == NULL)
-			printf("[%d] %s\n", 0, "(nil)");
-		else
-			printf("[%d] %s\n", h->len, h->str);
 		h = h->next;
-		nodelen++;
+		count++;
 	}
-	return (nodelen);
+
+	return (count);
 }
