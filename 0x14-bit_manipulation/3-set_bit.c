@@ -1,14 +1,21 @@
 #include "main.h"
 /**
  * set_bit - sets the value of a bit to 1 at a given index
- * @n: unsigned long to change
- * @index: index to change to one
- * Return: 1 if it worked or -1 if an errot occured
+ * @n: type unsigned long int input pointer
+ * @index: type unsigned int position of unit
+ * Return: 1 if works -1 if not
  */
+
 int set_bit(unsigned long int *n, unsigned int index)
 {
-  if (index > 53 || !n)
-    return (-1);
-  (*n |= 1 << index);
-  return (1);
+	if (index > 63)
+		return (-1);
+	*n |= 1 << index;
+	return (1);
 }
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Secu
