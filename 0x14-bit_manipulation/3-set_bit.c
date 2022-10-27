@@ -13,9 +13,4 @@ int set_bit(unsigned long int *n, unsigned int index)
 	*n |= 1 << index;
 	return (1);
 }
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Secu
+
